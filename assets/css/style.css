@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color-red: #E6533C; 
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark: #191919;
+    --color-gray: #222222;
+    --color-dark-white: #8d8d8d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:  var(--color-white);
+    background-color:  var(--color-black);
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h4 {
+    font-size: 28px;
+    color: var(--color-white);
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-dark-white);
+    margin: 10px 0;
+}
+button{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 2px solid var(--color-red);
+    border-radius: 42px;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+}
+input{
+    background-color: #383838;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 12px 12px;
+    width: 100%;
+}
+select{
+    background-color: #383838;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 12px 12px;
+    color: #8d8d8d;
+    width: 100%;
+}
+table, th, td{
+    color: #8d8d8d;
+    font-size: 14px;
+    border: 1px solid #8d8d8d;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 8px;
+}
+
+/* Reusable CSS */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.w-50{
+    width: 50%;
+}
+.section-title{
+    color: var(--color-white);
+    font-size: 48px;
+}
+.mx-auto{
+    margin: auto;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+ 
+
+/* Header Section CSS Start  */
+header{
+    padding-top: 57px;
+}
+.logo-text{
+    color: var(--color-red);
+}
+nav{
+    border: 1px solid var(--color-gray);
+    border-radius: 46px;
+    padding: 10px 2px;
+}
+nav ul{
+    list-style-type: none;
+}
+header .nav-item a{
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+header .nav-item a.active{
+    background-color: var(--color-red);
+    border-radius: 46px;
+}
+.hem-menu{
+    display: none;
+}
+/* Header Section CSS End  */
+
+
+/* Hero Section CSS Start  */
+.hero-content h2{
+    font-size: 78px;
+}
+.hero-content p{
+    margin: 15px 0;
+}
+.hero-right-content{
+    position: relative;
+}
+.hero-right-img{
+    width: 350px;
+}
+.work-out-video{
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    border-radius: 12px;
+    background-color: var(--color-gray);
+    padding: 17px 24px;
+}
+.video-tutorial{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 12px;
+    background-color: #242424;
+    padding: 17px 24px;
+}
+/* Hero Section CSS End  */
+
+
+/* Change Habit Section */
+#change-habit{
+    padding: 100px 0;
+}
+#change-habit .cards{
+    gap: 40px;
+}
+#change-habit .card img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0;
+}
+
+/* Run an extra mile */
+#extra-mile .container{
+    background-color: var(--color-gray);
+    border-radius: 18px;
+    padding: 40px;
+}
+#change-habit .card{
+    position: relative;
+}
+#change-habit .card .card-content{
+    position: absolute;
+    top: 0;
+}
+.extra-mile-image img{
+    border-radius: 18px;
+}
+
+
+/* Product Showcase Start */
+#product-showcase .container{
+    padding: 50px 0;
+}
+/* Product Showcase Start */
+
+
+/* BMI Calculator Start */
+#bmi-calculator-top{
+    background-color: var(--color-black);
+}
+#bmi-calculator-top .container{
+    padding: 50px 0;
+}
+#bmi-calculator{
+    background-color: var(--color-gray);
+}
+#bmi-calculator .container{
+    padding: 50px 0;
+}
+.calculator-chart{
+    margin: 0 auto;
+}
+#bmi-calculator .input-group{
+    gap: 12px;
+}
+/* BMI Calculator End */
+
+
+/* Meet our team */
+#meet-our-team{
+    padding: 100px 0;
+}
+#meet-our-team .container{
+
+}
+#meet-our-team .cards{
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-gray);
+    border-radius: 18px;
+}
+#meet-our-team .card{
+    position: relative;
+}
+#meet-our-team .card .team-member-img{
+    position: relative;
+}
+
+#meet-our-team .card img{
+    height: 300px;
+}
+#meet-our-team .card .card-content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+#meet-our-team img{
+    border-radius: 18px;
+}
+
+/* Footer */
+footer{
+    color: var(--color-dark);
+}
+.footer-bottom{
+    padding: 35px 0;
+}
+.footer-nav ul li a {
+    color: var(--color-dark-white);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 576px) {
+    .hero{
+        flex-direction: column;
+    }
+    .w-50{
+        width: 100%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav{
+        display: none;
+    }
+
+    /* Header */
+    .hem-menu{
+        display: block;
+        width: 24px;
+    }
+
+    /* Footer */
+    .footer-nav{
+        flex-direction: column;
+    }
+
+}
